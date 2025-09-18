@@ -40,14 +40,14 @@ public class RoomManager : MonoBehaviour
 	{
 		Debug.Log("✅ Successfully connected to room: " + room.name);
 		// You can enable your gameplay canvas here
-		CanvasGameobject.SetActive(true);
+		CanvasGameobject.SetActive(false);
 	}
 
 	private void DidDisconnectFromRoom(Realtime room)
 	{
 		Debug.Log("❌ Disconnected from room: " + room.name);
 		// Handle cleanup or show UI
-		CanvasGameobject.SetActive(false);
+		CanvasGameobject.SetActive(true);
 	}
 
 	private void OnClickJoinRoomButton()
